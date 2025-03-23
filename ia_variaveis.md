@@ -181,3 +181,68 @@ A imutabilidade é um dos princípios da programação funcional, tornando o có
 
 ⚠️ Conclusão
 Se uma variável não precisa mudar depois de ser definida, usar final ou const melhora a segurança, otimiza o desempenho e torna o código mais claro e confiável.
+
+• Quais métodos possuem as variáveis strings no dart? 
+R:
+o Dart, a classe String possui uma variedade de métodos que permitem realizar diversas operações em strings. Aqui estão alguns dos métodos mais comuns e úteis:
+
+🔹 1. Manipulação de Texto
+toLowerCase(): Converte todos os caracteres da string para minúsculas.
+
+toUpperCase(): Converte todos os caracteres da string para maiúsculas.
+
+trim(): Remove os espaços em branco no início e no final da string.
+
+trimLeft(): Remove os espaços em branco no início da string.
+
+trimRight(): Remove os espaços em branco no final da string.
+
+replaceAll(Pattern from, String to): Substitui todas as ocorrências de uma substring por outra.
+
+replaceFirst(Pattern from, String to): Substitui a primeira ocorrência de uma substring por outra.
+
+substring(int startIndex, [int endIndex]): Retorna uma substring da string, começando no índice startIndex até endIndex.
+
+🔹 2. Busca e Verificação
+contains(Pattern other): Verifica se a string contém o padrão (substring).
+
+startsWith(String prefix): Verifica se a string começa com o prefixo especificado.
+
+endsWith(String suffix): Verifica se a string termina com o sufixo especificado.
+
+indexOf(Pattern pattern, [int start = 0]): Retorna o índice da primeira ocorrência do padrão na string, a partir do índice inicial fornecido.
+
+lastIndexOf(Pattern pattern, [int start]): Retorna o índice da última ocorrência do padrão na string.
+
+🔹 3. Conversão
+split(String separator): Divide a string em uma lista de substrings com base no delimitador fornecido.
+
+splitMapJoin(Pattern pattern, {Function? onMatch, Function? onNonMatch}): Divide a string com base no padrão e permite mapear o conteúdo de cada segmento.
+
+padLeft(int width, [String padding = " "]): Preenche a string à esquerda até atingir a largura especificada, usando o valor de preenchimento fornecido (padrão é espaço).
+
+padRight(int width, [String padding = " "]): Preenche a string à direita até atingir a largura especificada, usando o valor de preenchimento fornecido (padrão é espaço).
+
+🔹 4. Comparação
+compareTo(String other): Compara a string com outra string lexicograficamente.
+
+==: Comparação de igualdade entre strings (verifica se duas strings são idênticas).
+
+🔹 5. Verificação de Caracteres
+isEmpty: Verifica se a string está vazia.
+
+isNotEmpty: Verifica se a string não está vazia.
+
+length: Retorna o comprimento (número de caracteres) da string.
+
+🔹 6. Codificação e Decodificação
+codeUnitAt(int index): Retorna o código da unidade Unicode do caractere na posição especificada.
+
+runes: Retorna os pontos de código Unicode de cada caractere da string como um Iterable<int>.
+
+🔹 7. Outros
+splitMapJoin(): Divide a string em substrings usando um padrão, podendo especificar como manipular as partes divididas.
+
+toString(): Converte a string para uma representação de string (geralmente desnecessário, pois a string já é uma string).
+
+Esses métodos permitem que você manipule, transforme, compare e consulte strings de maneira flexível e eficiente em Dart.
