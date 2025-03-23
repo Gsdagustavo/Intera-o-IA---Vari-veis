@@ -59,3 +59,30 @@ Evite a propagação desnecessária de valores nulos – Sempre que possível, l
 Use required em parâmetros opcionais quando necessário – Ao definir parâmetros em funções ou construtores, marcar os obrigatórios com required evita problemas ao tentar acessar valores nulos inesperadamente.
 
 Utilize Null Safety a seu favor – O Dart oferece recursos avançados para lidar com nulos, então aproveite-os para tornar seu código mais seguro e evitar erros comuns, como NullPointerException.
+
+• No dart quando usar variáveis nulas e quando usar o modificador late? 
+R: 
+Em Dart, a escolha entre permitir variáveis nulas (?) ou usar o modificador late depende do contexto e do comportamento esperado da variável. Aqui está um guia sobre quando usar cada um:
+
+✅ Quando usar variáveis nulas (?)
+Use quando a variável pode realmente ser nula em algum momento do ciclo de vida do programa. Isso é útil para valores opcionais ou para representar estados em que a ausência de um valor faz sentido.
+
+Parâmetros opcionais em funções ou classes.
+
+Valores que podem ser indefinidos até que alguma condição seja atendida.
+
+Dados carregados de fontes externas (como API ou banco de dados) que podem estar ausentes.
+
+✅ Quando usar late
+Use late quando a variável sempre terá um valor antes de ser acessada, mas não pode ser inicializada no momento da declaração. Isso evita a necessidade de um valor nulo e melhora a segurança do código.
+
+Inicialização tardia, como objetos que dependem de configurações externas.
+
+Evitar valores nulos desnecessários, garantindo que a variável será atribuída antes do uso.
+
+Melhoria de performance, já que o valor só é carregado quando realmente necessário.
+
+⚠️ Regra geral
+Se a variável pode ser nula intencionalmente, use ?.
+
+Se a variável sempre terá um valor antes do uso, mas não pode ser inicializada na declaração, use late.
