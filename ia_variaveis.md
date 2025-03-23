@@ -116,3 +116,40 @@ Se a variável nunca for inicializada antes do primeiro uso, o programa lançar�
 Evite usá-lo quando um valor inicial padrão puder ser fornecido.
 
 Conclusão: O late é útil para melhorar a segurança e eficiência do código, especialmente quando uma variável precisa ser inicializada depois da sua declaração, mas sempre terá um valor antes do uso.
+
+• Quais as diferenças entre final e const em dart? 
+R:
+Em Dart, tanto final quanto const são usados para criar variáveis imutáveis, mas há diferenças importantes entre eles.
+
+🔹 1. final – Valor fixo em tempo de execução
+O valor é atribuído apenas uma vez e não pode ser alterado depois.
+
+A inicialização acontece em tempo de execução, ou seja, o valor pode ser definido dinamicamente quando o programa estiver rodando.
+
+Pode ser usado para armazenar objetos que podem ter comportamento dinâmico, desde que a referência do objeto não seja alterada.
+
+📌 Exemplo de uso:
+
+Para valores que são calculados no momento da execução.
+
+Quando o valor é conhecido somente durante a execução do programa.
+
+Para armazenar instâncias de classes ou objetos que não mudarão após a criação.
+
+🔹 2. const – Valor fixo em tempo de compilação
+O valor precisa ser conhecido em tempo de compilação e nunca poderá ser modificado.
+
+A inicialização ocorre antes da execução, economizando memória, pois os valores são armazenados no próprio código.
+
+Objetos criados com const são compilados como constantes e reutilizados pelo Dart.
+
+📌 Exemplo de uso:
+
+Para valores totalmente imutáveis e conhecidos antes da execução, como números fixos, strings e listas imutáveis.
+
+Para melhorar o desempenho armazenando valores constantes na memória do programa
+
+📌 Regra geral de uso:
+Use final quando precisar garantir que um valor não será alterado após a atribuição, mas o valor só é conhecido em tempo de execução.
+
+Use const quando o valor for imutável e conhecido em tempo de compilação, para otimizar o desempenho.
