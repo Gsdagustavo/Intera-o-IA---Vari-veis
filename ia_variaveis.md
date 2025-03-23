@@ -19,3 +19,25 @@ Use ? para valores opcionais – Se uma variável pode ser nula, indique isso ex
 Evite criar variáveis desnecessárias – Sempre que possível, elimine variáveis que não agregam valor ao código e substitua por expressões diretas para melhorar a eficiência.
 
 Seguir essas boas práticas garante um código mais limpo, eficiente e seguro.
+
+• O que evitar na hora de declarar variáveis em dart? 
+R:
+Aqui estão os principais erros a evitar ao declarar variáveis em Dart:
+
+Usar var sem necessidade – Embora seja conveniente, pode comprometer a clareza do código, tornando difícil identificar o tipo de dado armazenado.
+
+Declarar variáveis sem inicializá-las – Se uma variável não for inicializada corretamente, pode levar a erros em tempo de execução. Sempre atribua um valor inicial adequado quando possível.
+
+Usar dynamic sem necessidade – Esse tipo desativa a verificação de tipo do compilador, aumentando a chance de erros inesperados ao manipular diferentes tipos de dados.
+
+Não utilizar final ou const quando possível – Se uma variável não precisa ser alterada após a atribuição, é recomendável usar final ou const para garantir a imutabilidade e melhorar a performance.
+
+Nomear variáveis de forma confusa – Usar nomes muito genéricos ou abreviados dificulta a legibilidade do código e pode gerar confusão sobre a função da variável.
+
+Usar late sem necessidade – Essa palavra-chave deve ser aplicada apenas quando a variável será inicializada posteriormente, mas seu uso excessivo pode mascarar erros de inicialização.
+
+Declarar variáveis desnecessárias – Criar variáveis que nunca são utilizadas aumenta o consumo de memória e torna o código mais poluído e difícil de manter.
+
+Usar variáveis globais sem necessidade – O uso excessivo de variáveis globais pode dificultar a manutenção e depuração do código, além de gerar dependências indesejadas entre diferentes partes do programa.
+
+Seguindo essas diretrizes, o código se torna mais eficiente, seguro e fácil de entender.
