@@ -20,6 +20,10 @@ Evite criar variáveis desnecessárias – Sempre que possível, elimine variáv
 
 Seguir essas boas práticas garante um código mais limpo, eficiente e seguro.
 
+// eu tive um pouco de dúvidas ao começar a estudar a linguagem dart em respeito às boas práticas. Eu tentei aplicar os meus conhecimentos de Java, mas parece que...
+.. não era muito apropriado. Eu sentia que o código estava "estranho" de alguma maneira. Porém, agora, com um pouco de prática e mais estudos, já tenho um workflow mais ...
+.. fluido com a linguagem
+
 • O que evitar na hora de declarar variáveis em dart? 
 R:
 Aqui estão os principais erros a evitar ao declarar variáveis em Dart:
@@ -41,6 +45,9 @@ Declarar variáveis desnecessárias – Criar variáveis que nunca são utilizad
 Usar variáveis globais sem necessidade – O uso excessivo de variáveis globais pode dificultar a manutenção e depuração do código, além de gerar dependências indesejadas entre diferentes partes do programa.
 
 Seguindo essas diretrizes, o código se torna mais eficiente, seguro e fácil de entender.
+
+// também tive algumas dúvidas sobre o operador "?" ao declarar variaveis. No java, eu geralmente instanciava a variavel como null e depois atribuía um valor a ela.
+.. Porém, no dart, isso não é possível sem o operador "?". Mas faz muito sentido, pois isso deixa o código mais seguro e consistente.
 
 • Quais cuidados tomar quando crio variáveis com valor nulo trabalhando com dart? 
 R: 
@@ -117,6 +124,8 @@ Evite usá-lo quando um valor inicial padrão puder ser fornecido.
 
 Conclusão: O late é útil para melhorar a segurança e eficiência do código, especialmente quando uma variável precisa ser inicializada depois da sua declaração, mas sempre terá um valor antes do uso.
 
+// com esses conhecimentos, pretendo refatorar o código de um projeto que fiz (gerenciador de senhas) usando a linguagem Dart. 
+
 • Quais as diferenças entre final e const em dart? 
 R:
 Em Dart, tanto final quanto const são usados para criar variáveis imutáveis, mas há diferenças importantes entre eles.
@@ -153,6 +162,9 @@ Para melhorar o desempenho armazenando valores constantes na memória do program
 Use final quando precisar garantir que um valor não será alterado após a atribuição, mas o valor só é conhecido em tempo de execução.
 
 Use const quando o valor for imutável e conhecido em tempo de compilação, para otimizar o desempenho.
+
+// no Java, eu utilizava constantes apenas para variaveis muito especificas no codigo, quase inexistentes. Porém, em dart, constantes e finals são muito..
+.. mais flexiveis, sendo utilizadas em quase todos os codigos.
 
 • Por que no dart usar variáveis final e const ao invés de usar somente seus valores padrão? 
 R:
@@ -246,6 +258,8 @@ splitMapJoin(): Divide a string em substrings usando um padrão, podendo especif
 toString(): Converte a string para uma representação de string (geralmente desnecessário, pois a string já é uma string).
 
 Esses métodos permitem que você manipule, transforme, compare e consulte strings de maneira flexível e eficiente em Dart.
+
+// alguns desses métodos foram muito uteis para realizar a atividade 10 da lista de exercicios de logica de programação, com destaque no metodo .contains();
 
 • Traga a documentação dos métodos de variáveis inteiras. 
 R:
