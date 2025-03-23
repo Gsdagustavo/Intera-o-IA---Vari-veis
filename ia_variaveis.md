@@ -153,3 +153,31 @@ Para melhorar o desempenho armazenando valores constantes na memória do program
 Use final quando precisar garantir que um valor não será alterado após a atribuição, mas o valor só é conhecido em tempo de execução.
 
 Use const quando o valor for imutável e conhecido em tempo de compilação, para otimizar o desempenho.
+
+• Por que no dart usar variáveis final e const ao invés de usar somente seus valores padrão? 
+R:
+No Dart, usar final e const em vez de simplesmente atribuir valores padrão oferece várias vantagens, tanto em segurança quanto em performance. Aqui estão os principais motivos para usá-los:
+
+✅ 1. Evita reatribuições acidentais
+final e const garantem que a variável não será modificada após a atribuição inicial. Isso impede alterações não intencionais e torna o código mais confiável.
+
+Se uma variável não precisa mudar, é uma boa prática torná-la imutável para evitar erros.
+
+✅ 2. Melhora a legibilidade e a intenção do código
+Ao usar final ou const, fica claro para outros desenvolvedores (ou para você mesmo no futuro) que a variável é imutável e não deve ser alterada.
+
+Isso torna o código mais fácil de entender e manter.
+
+✅ 3. Otimização de desempenho
+const economiza memória porque seu valor é armazenado em tempo de compilação e reutilizado em todo o programa.
+
+Variáveis normais são alocadas na heap (memória dinâmica), enquanto const pode ser armazenado na stack (memória estática), reduzindo o uso de recursos.
+
+✅ 4. Segurança em multithreading e concorrência
+Como final e const criam valores imutáveis, eles ajudam a evitar problemas em ambientes concorrentes, como em apps Flutter, onde múltiplas threads podem acessar os mesmos dados.
+
+✅ 5. Facilita a programação funcional
+A imutabilidade é um dos princípios da programação funcional, tornando o código mais previsível e menos propenso a bugs.
+
+⚠️ Conclusão
+Se uma variável não precisa mudar depois de ser definida, usar final ou const melhora a segurança, otimiza o desempenho e torna o código mais claro e confiável.
