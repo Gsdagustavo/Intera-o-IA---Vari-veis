@@ -246,3 +246,79 @@ splitMapJoin(): Divide a string em substrings usando um padrão, podendo especif
 toString(): Converte a string para uma representação de string (geralmente desnecessário, pois a string já é uma string).
 
 Esses métodos permitem que você manipule, transforme, compare e consulte strings de maneira flexível e eficiente em Dart.
+
+• Traga a documentação dos métodos de variáveis inteiras. 
+R:
+​No Dart, a classe int oferece diversos métodos úteis para manipulação e conversão de números inteiros. Abaixo, apresento alguns dos principais métodos disponíveis:​
+
+Métodos de Instância
+compareTo(int other): Compara o valor do inteiro atual com outro inteiro other. Retorna:​
+
+0 se os valores forem iguais.​
+
+Um número negativo se o valor atual for menor que other.​
+
+Um número positivo se o valor atual for maior que other.​
+
+isEven: Verifica se o número é par. Retorna true se o número for par, caso contrário, retorna false.​
+
+isOdd: Verifica se o número é ímpar. Retorna true se o número for ímpar, caso contrário, retorna false.​
+
+isNegative: Verifica se o número é negativo. Retorna true se o número for negativo, caso contrário, retorna false.​
+
+isPositive: Verifica se o número é positivo. Retorna true se o número for positivo, caso contrário, retorna false.​
+
+toDouble(): Converte o inteiro para um número de ponto flutuante (double).​
+
+toString(): Converte o inteiro para uma representação em string.​
+
+toRadixString(int radix): Converte o número para uma string na base especificada por radix (por exemplo, binário, octal, hexadecimal).​
+
+abs(): Retorna o valor absoluto do número.​
+
+clamp(int lowerLimit, int upperLimit): Restringe o valor do número para estar dentro dos limites especificados por lowerLimit e upperLimit. Retorna o número ajustado.​
+
+remainder(int other): Retorna o resto da divisão do número pelo inteiro other.​
+
+toSigned(int width): Converte o número para uma representação com sinal de largura especificada em bits.​
+
+toUnsigned(int width): Converte o número para uma representação sem sinal de largura especificada em bits.​
+Dart packages
+
+toInt(): Retorna o número como um inteiro. Geralmente, utilizado para converter de tipos numéricos de ponto flutuante para inteiros.​
+
+isWithin(int lower, int upper): Verifica se o número está dentro do intervalo especificado entre lower e upper. Retorna true se estiver dentro do intervalo, caso contrário, retorna false.​
+
+isEven: Verifica se o número é par. Retorna true se o número for par, caso contrário, retorna false.​
+
+isOdd: Verifica se o número é ímpar. Retorna true se o número for ímpar, caso contrário, retorna false.​
+
+isNegative: Verifica se o número é negativo. Retorna true se o número for negativo, caso contrário, retorna false.​
+
+isPositive: Verifica se o número é positivo. Retorna true se o número for positivo, caso contrário, retorna false.​
+
+isZero: Verifica se o número é zero. Retorna true se o número for zero, caso contrário, retorna false.​
+
+isFinite: Verifica se o número é finito. Retorna true se o número for finito, caso contrário, retorna false.​
+
+isInfinite: Verifica se o número é infinito. Retorna true se o número for infinito, caso contrário, retorna false.​
+
+isNaN: Verifica se o número é "Not-a-Number". Retorna true se o número for NaN, caso contrário, retorna false.​
+
+isNegativeInfinity: Verifica se o número é negativo infinito. Retorna true se o número for negativo infinito, caso contrário, retorna false.​
+
+isPositiveInfinity: Verifica se o número é positivo infinito. Retorna true se o número for positivo infinito, caso contrário, retorna false.​
+
+isSubnormal: Verifica se o número é subnormal. Retorna true se o número for subnormal, caso contrário, retorna false.​
+
+isFinite: Verifica se o número é finito. Retorna true se o número for finito, caso contrário, retorna false.​
+
+isInfinite: Verifica se o número é infinito. Retorna true se o número for infinito, caso contrário, retorna false.​
+
+isNaN: Verifica se o número é "Not-a-Number". Retorna true se o número for NaN, caso contrário, retorna false.​
+
+isNegativeInfinity: Verifica se o número é negativo infinito. Retorna true se o número for negativo infinito, caso contrário, retorna false.​
+
+isPositiveInfinity: Verifica se o número é positivo infinito. Retorna true se o número for positivo infinito, caso contrário, retorna false.​
+
+isSubnormal: Verifica se o número é subnormal. Retorna true se o número for subnormal, caso contrário, retorna false.
